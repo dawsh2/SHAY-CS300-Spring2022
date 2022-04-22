@@ -4,7 +4,7 @@
 ** Javascript
 #+name: inline-js
 #+begin_src javascript :exports none
-console.log('Test');
+alert('Sup1');
 #+end_src
 
 #+begin_src elisp :noweb yes :exports results :results html
