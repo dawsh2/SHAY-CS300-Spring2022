@@ -2,9 +2,10 @@
 ** This is an HTML file 
 ** This is a Change I will Commit
 ** Javascript
+In this subheading we include a javascript alert box.
 #+name: inline-js
 #+begin_src javascript :exports none
-alert('Sup1');
+alert('Hello');
 #+end_src
 
 #+begin_src elisp :noweb yes :exports results :results html
@@ -17,6 +18,6 @@ alert('Sup1');
 #+results:
 #+BEGIN_EXPORT html
 <script type="text/javascript">
-console.log('Test');
+alert('Test');
 </script>
 #+END_EXPORT
