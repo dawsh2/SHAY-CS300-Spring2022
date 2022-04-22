@@ -1,3 +1,9 @@
 * Hello
 ** This is an HTML file 
 ** This is a Change I will Commit
+** Javascript
+<p id="p1">Hello World!</p>
+
+<script>
+document.getElementById("p1").innerHTML = "New text!";
+</script>
