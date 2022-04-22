@@ -2,8 +2,21 @@
 ** This is an HTML file 
 ** This is a Change I will Commit
 ** Javascript
-<p id="p1">Hello World!</p>
+#+name: inline-js
+#+begin_src javascript :exports none
+console.log('Test');
+#+end_src
 
-<script>
-document.getElementById("p1").innerHTML = "New text!";
+#+begin_src elisp :noweb yes :exports results :results html
+(concat
+ "<script type=\"text/javascript\">\n"
+ "<<inline-js>>\n"
+ "</script>")
+#+end_src
+
+#+results:
+#+BEGIN_EXPORT html
+<script type="text/javascript">
+console.log('Test');
 </script>
+#+END_EXPORT
