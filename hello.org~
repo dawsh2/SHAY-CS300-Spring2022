@@ -1,0 +1,23 @@
+* Hello
+** This is an HTML file 
+** This is a Change I will Commit
+** Javascript
+In this subheading we include a javascript alert box. We ca
+#+name: inline-js
+#+begin_src javascript :exports none
+alert('Hello');
+#+end_src
+
+#+begin_src elisp :noweb yes :exports results :results html
+(concat
+ "<script type=\"text/javascript\">\n"
+ "<<inline-js>>\n"
+ "</script>")
+#+end_src
+
+#+results:
+#+BEGIN_EXPORT html
+<script type="text/javascript">
+alert('Test');
+</script>
+#+END_EXPORT

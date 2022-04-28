@@ -22,7 +22,7 @@ alert(a + b);
 #+BEGIN_EXPORT html
 <script type="text/javascript">
 
-var a = prompt("Enter first number");
+var a = 
 var b = prompt("Enter second number");
 var fun = prompt("Enter Function (+, -, *, /");
 alert(a + b);

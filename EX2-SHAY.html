@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <body>
+    <div>
+      <label>First Number</label>
+      <input id="firstNum">
+      
+      <label>Second Number</label>
+      <input id="secondNum">
+      
+      <button onclick="addNums()">+</button>
+      <button onClick="subNums()">-</button>
+      <button onClick="multNums()">*</button>
+      <button onClick="divNums()">/</button>
+      <div>
+        Result: <p id="result"></p>
+      </div>
+    </div>
+    <script>
+      function getFirst() {
+	  return parseInt(document.getElementById("firstNum").value);
+}
+function getSecond() {
+  return parseInt(document.getElementById("secondNum").value);
+}
+
+function addNums() {
+  document.getElementById("result").innerHTML = getFirst() + getSecond();
+}
+function subNums() {
+  document.getElementById("result").innerHTML = getFirst() - getSecond();
+}
+function multNums() {
+  document.getElementById("result").innerHTML = getFirst() * getSecond();
+}
+function divNums() {
+  document.getElementById("result").innerHTML = getFirst() / getSecond();
+}
+
+    </script>
+  </body>
+</html>
